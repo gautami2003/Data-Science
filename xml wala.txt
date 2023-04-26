@@ -1,0 +1,21 @@
+Emp .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<employee>
+<fname>Alice</fname>
+<lname>Anthony</lname>
+<home>L.A</home>
+<expertise name="Java"/>
+<expertise name="Python"/>
+<expertise name="Developer"/>
+<expertise name="Designer"/>
+
+
+</employee>
+Emp .py
+import xml.dom.minidom
+def main():
+doc=xml.dom.minidom.parse("emp.xml");
+print(doc.nodeName)
+print(doc.rstChild.tagName)
+if __name__=="__main__":
+main()
